@@ -13,9 +13,8 @@ android {
     setCompileSdkVersion(property("compileSdkVersion") as Int)
     defaultConfig {
         setMinSdkVersion(property("minSdkVersion") as Int)
-        setTargetSdkVersion(property("targetSdkVersion") as Int)
-        versionCode = 1
-        versionName = "2.7.1"
+        setTargetSdkVersion((property("targetSdkVersion") as Int).toString())
+
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         testInstrumentationRunnerArgument("filter", "" +
                 "com.otaliastudios.cameraview.tools.SdkExcludeFilter," +

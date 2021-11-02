@@ -8,7 +8,7 @@ android {
     defaultConfig {
         applicationId = "com.otaliastudios.cameraview.demo"
         setMinSdkVersion(property("minSdkVersion") as Int)
-        setTargetSdkVersion(property("targetSdkVersion") as Int)
+        setTargetSdkVersion((property("targetSdkVersion") as Int).toString())
         versionCode = 1
         versionName = "1.0"
         vectorDrawables.useSupportLibrary = true
